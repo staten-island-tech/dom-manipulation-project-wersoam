@@ -1,9 +1,7 @@
-#container-box {
+#background {
     background-color: rgb(128, 128, 128);
   
     font-size: 2vh;
     color: rgb(255, 255, 255);
-    height: 100vh;
     text-align: center;
   }
-#padding{ padding: 200px;}

@@ -1,15 +1,19 @@
+const pizza = document.createElement();
+const hotdog = document.createElement();
+
 const DOMSelectors = {
   button: document.getElementById("btn"),
   text: document.querySelector("#text"),
-  box: document.getElementById("container-box"),
+  input: document.getElementById("input"),
+  text: document.getElementById("#text2")
 };
 
 function text(text) {
-  text.textContent = "thank you for the input, have a nice day ( *・∀・)ノ゛";
+  text.textContent = "step 1 done";
 }
-DOMSelectors.button.addEventListener("click", function () {
+DOMSelectors.button.addEventListener("submit", function () {
   text(DOMSelectors.text);
 });
-function name() {
-  DOMSelectors.getElementById("inputid").value = "";
+function text(text) {
+  text.textContent = "step 1 done";
 }
