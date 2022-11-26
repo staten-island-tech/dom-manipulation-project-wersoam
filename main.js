@@ -4,22 +4,24 @@ const DOMSelectors = {
   input: document.getElementById("input"),
   img: document.getElementById("image"),
   button2: document.getElementById("btn2"),
+  display: document.getElementById("display"),
 };
-function text(text) {
-  text.textContent = "step 1 done";
+function gettext() {
+  if (DOMSelectors.input.value == "pizza") {
+    DOMSelectors.img.src = "pizza.jpg";
+  } else {
+    DOMSelectors.img.src = "hotdog.jpg";
+  }
 }
 function clearinput() {
   DOMSelectors.input.value = "";
+  DOMSelectors.img.src = "question.png";
 }
-function display() {
-  DOMSelectors.img.insertAdjacentHTML("beforeend", (img.src = "pizza.jpg"));
-}
-DOMSelectors.button.addEventListener("click", function () {
-  text(DOMSelectors.text);
-  var answer = document.getElementById("input").value;
-if var answer = "pizza" {display()}
-});
 
-function pizza() {
-  img.src = "pizza.jpg";
-}
+DOMSelectors.button.addEventListener("click", function () {
+  var answer = DOMSelectors.input.value;
+  gettext();
+});
+DOMSelectors.button2.addEventListener("click", function () {
+  clearinput(DOMSelectors);
+});
