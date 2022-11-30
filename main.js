@@ -5,6 +5,8 @@ const DOMSelectors = {
   img: document.getElementById("image"),
   button2: document.getElementById("btn2"),
   display: document.getElementById("display"),
+  input2: document.getElementById("input2"),
+  input3: document.getElementById("input3"),
 };
 function gettext() {
   if (DOMSelectors.input.value == "pizza") {
